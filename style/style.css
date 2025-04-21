@@ -29,7 +29,7 @@
 
 .header
 {
-    padding: 2% 0% 0% 10%;
+    padding: 0.5% 0% 0% 10%;
 }
 
 .header-menu
@@ -51,7 +51,7 @@
     
 .header-menu ul li 
 {
-    margin: 0 80px; /* Espacio entre los elementos de la lista */
+    margin: 0 100px; /* Espacio entre los elementos de la lista */
 }
     
 
@@ -78,12 +78,13 @@ p
     color: var(--color-secundario);
 }
 
-.presentacion
-{
+.presentacion {
     display: flex;
-    align-items: center;
-    padding:  1.9% 10%;
+    align-items: flex-start; /* <=== esto alinea el contenido arriba */
+    padding: 1.9% 10%;
     justify-content: space-between;
+    flex-wrap: wrap; /* para que se acomode en columnas en pantallas chicas */
+    gap: 30px; /* espacio entre texto e imagen */
 }
 
 .presentacion-contenido
@@ -91,18 +92,18 @@ p
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 10px;
 }
 
 .presentacion-contenido-titulo
 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-family: var(--fuente-monserrat);
 }
 
 .presentacion-contenido-textoparrafo
 {
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     font-family: var(--fuente-monserrat);
 }
 
@@ -112,7 +113,7 @@ p
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .links-contactos img {
@@ -147,9 +148,10 @@ p
     font-weight: 500;
 }
 
-.imagen
-{
+.imagen {
     width: 40%;
+    height: auto;
+    align-self: flex-start;
 }
 
 .footer
@@ -184,4 +186,37 @@ p
         width: auto;
     }
 }
+
+/* ===== Sección de Contacto ===== */
+.contacto-seccion {
+    padding: 3% 10%;
+    font-family: var(--fuente-monserrat);
+    color: var(--color-secundario);
+    text-align: center;
+}
+
+.contacto-titulo {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.contacto-redes {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contacto-redes img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+    gap: 50px;
+}
+
+.contacto-redes img:hover {
+    transform: scale(1.3);
+}
+
 
