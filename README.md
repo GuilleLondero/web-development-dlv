@@ -20,8 +20,4 @@ El sitio está diseñado para ofrecer una navegación sencilla, optimizada para 
 - **Google Fonts**: Fuentes tipográficas personalizadas.
 - **GitHub Pages**: Hospedaje del sitio de manera gratuita.
 
-## Cómo desplegar el proyecto
 
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/tuusuario/dlv-company.git
